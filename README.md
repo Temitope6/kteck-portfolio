@@ -11,10 +11,8 @@ Experience: 3 Years
 Role: Remote Web Developer
 
 🌐 Live Portfolio
+https://Temitope6.github.io/kteck-portfolio
 
-View the live website here:
-
-https://kteck-dev.netlify.app
 
 🛠 Technologies Used
 
@@ -81,11 +79,10 @@ Screenshots of each project are included in the portfolio website.
 
 If you would like to work with me or collaborate on a project:
 
-Email: your-email@example.com
-Portfolio: https://kteck-dev.netlify.app
+Email: your-davidtemitope017@gmail.com
+Portfolio: https://Temitope6.github.io/kteck-portfolio
 
 ---
 
 © 2026 K-TECK | Oluwafemi Temitope# kteck-portfolio
 K-Teck Web developer portfolio 
-Live Demo: https://Temitope6.github.io/kteck-portfolio
