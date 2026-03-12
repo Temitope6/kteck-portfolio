@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K-TECK | Advanced Web Developer Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Inter',sans-serif;background:#f4f6fb;color:#1e293b}
+.container{max-width:1100px;margin:auto;padding:20px}
+header{background:#0f172a;color:white}
+.hero{display:flex;flex-wrap:wrap;align-items:center;gap:40px;padding:60px 20px}
+.hero img{width:180px;height:180px;border-radius:50%;object-fit:cover;border:6px solid #e2e8f0}
+.hero h1{margin:0;font-size:38px}
+.hero p{opacity:.9}
+.btn{display:inline-block;margin-top:15px;padding:12px 20px;background:#3b82f6;color:white;text-decoration:none;border-radius:8px}section{padding:60px 0} .section-title{text-align:center;margin-bottom:40px;font-size:28px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px} .card{background:white;padding:25px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.08)}
+
+.skills span{display:inline-block;background:#e2e8f0;padding:8px 12px;border-radius:6px;margin:5px;font-size:14px}
+
+.projects{display:grid;gap:40px} .project-card{background:white;border-radius:12px;padding:20px;box-shadow:0 10px 25px rgba(0,0,0,0.08)} .project-images{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:15px} .project-images img{width:100%;height:180px;object-fit:cover;border-radius:8px} .project-card h3{margin:10px 0 5px} .tech{font-size:14px;color:#475569;margin-top:8px}
+
+.contact-form{max-width:600px;margin:auto} .contact-form input,.contact-form textarea{width:100%;padding:12px;margin:10px 0;border-radius:8px;border:1px solid #cbd5e1;font-family:inherit} .contact-form button{background:#0f172a;color:white;border:none;padding:12px 20px;border-radius:8px;cursor:pointer}
+
+footer{background:#0f172a;color:#cbd5f5;text-align:center;padding:25px;margin-top:40px} .lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.85);display:none;align-items:center;justify-content:center;z-index:1000} .lightbox img{max-width:90%;max-height:90%;border-radius:10px} .lightbox.active{display:flex} .project-images img{cursor:pointer} </style>
+
+</head>
+<body><header>
+<div class="container hero">
+<img src="developer.jpg" alt="Developer Photo">
+<div>
+<h1>Oluwafemi Temitope</h1>
+<p><strong>K-TECK</strong> | Remote Web Developer</p>
+<p>Professional web developer with 3 years of experience building scalable, responsive and modern websites for global clients.</p>
+<a href="#contact" class="btn">Hire Me</a>
+</div>
+</div>
+</header><section id="about">
+<div class="container">
+<h2 class="section-title">About K-TECK</h2>
+<div class="card">
+<p>K-TECK is a modern web development brand focused on building high-performance websites, landing pages and web applications for businesses worldwide. I specialize in remote collaboration, modern UI/UX design and clean scalable code.</p>
+</div>
+</div>
+</section><section>
+<div class="container">
+<h2 class="section-title">Skills</h2>
+<div class="card skills">
+<span>HTML5</span>
+<span>CSS3</span>
+<span>JavaScript</span>
+<span>PHP</span>
+<span>MySQL</span>
+<span>Responsive Design</span>
+<span>API Integration</span>
+<span>UI/UX Design</span>
+</div>
+</div>
+</section><section id="projects">
+<div class="container">
+<h2 class="section-title">Project Showcase</h2>
+<div class="projects"><div class="project-card">
+<div class="project-images">
+<img src="attendance1.jpg" alt="Attendance System Screenshot">
+<img src="attendance2.jpg" alt="Attendance System Screenshot">
+</div>
+<h3>Attendance Management System</h3>
+<p>A responsive school management system used to manage the daily attendance of students and lecturers. The system allows administrators and lecturers to record, track and manage attendance efficiently.</p>
+<p class="tech">Built with: HTML, PHP, JavaScript, MySQL</p>
+</div><div class="project-card">
+<div class="project-images">
+<img src="entrepreneurship1.jpg" alt="Entrepreneurship System Screenshot">
+<img src="entrepreneurship2.jpg" alt="Entrepreneurship System Screenshot">
+</div>
+<h3>Entrepreneurship Learning System</h3>
+<p>A web-based learning platform where users can learn new skills or teach others. The system allows instructors to upload learning materials while students can enroll and learn various skills online.</p>
+<p class="tech">Built with: HTML, PHP, JavaScript, MySQL</p>
+</div><div class="project-card">
+<div class="project-images">
+<img src="hotel1.jpg" alt="Hotel Management System Screenshot">
+<img src="hotel2.jpg" alt="Hotel Management System Screenshot">
+</div>
+<h3>Hotel Management System</h3>
+<p>A web-based system that allows customers to book hotel rooms online while helping hotel staff manage reservations, room availability, guest check-in and check-out, billing, and other daily hotel operations.</p>
+<p class="tech">Built with: HTML, PHP, JavaScript, MySQL</p>
+</div></div>
+</div>
+</section><section id="contact">
+<h2>Contact Me</h2>
+Email: davidtemitope017@gmail.com
+Phone / WhatsApp: +2349011840400
+Location: Nigeria (Available for Remote Work)
+</div>
+</section><footer>
+<p>© 2026 K-TECK | Oluwafemi Temitope | Remote Web Developer</p>
+</footer><div id="lightbox" class="lightbox" onclick="closeLightbox()">
+<img id="lightbox-img" src="" alt="Preview">
+</div><script>
+function openLightbox(src){
+ const box=document.getElementById('lightbox');
+ const img=document.getElementById('lightbox-img');
+ img.src=src;
+ box.classList.add('active');
+}
+
+function closeLightbox(){
+ document.getElementById('lightbox').classList.remove('active');
+}
+
+// make project images clickable
+window.addEventListener('DOMContentLoaded',()=>{
+ document.querySelectorAll('.project-images img').forEach(img=>{
+   img.addEventListener('click',()=>openLightbox(img.src));
+ });
+});
+
+function sendMessage(e){
+ e.preventDefault();
+ alert("Message sent successfully! I will contact you soon.");
+}
+</script></body>
+</html>
